@@ -4,7 +4,7 @@ import os
 import guidance
 
 # we use LLaMA here, but any GPT-style model will do
-llama = guidance.llms.Transformers("your_path/llama-7b", device=0)
+llama = guidance.llms.Transformers("a16z-infra/llama7b-v2-chat:4f0a4744c7295c024a1de15e1a63c880d3da035fa1f49bfd344fe076074c8eea", device=0)
 
 # we can pre-define valid option sets
 valid_weapons = ["sword", "axe", "mace", "spear", "bow", "crossbow"]
